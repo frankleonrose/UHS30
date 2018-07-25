@@ -1,0 +1,20 @@
+{
+  "name": "UHS30",
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/felis/UHS30.git"
+  },
+  "build": {
+    "srcFilter": "+<libraries/UHS_host/*.c> +<libraries/UHS_host/*.h> +<libraries/UHS_ByteBuffer/*.cpp> +<libraries/RTClib/*.c> -<libraries/UHS_FS/FAT/FatFS/src/*.c>"
+  },
+  "export": {
+    "include": [
+      "libraries/UHS_host/*.h",
+      "libraries/UHS_host/*/*.h",
+      "libraries/RTClib/*.h",
+      "libraries/UHS_FS"
+    ],
+    "exclude": [
+    ]
+  }
+}
